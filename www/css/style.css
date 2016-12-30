@@ -8,38 +8,44 @@ header {
 
 
 
-header h2 {
-	padding-top: 30px;
-	font-family: 'Raleway', sans-serif;
-	color: white;
-	text-align: center;
-}
+	header h2 {
+		padding-top: 30px;
+		font-family: 'Raleway', sans-serif;
+		color: white;
+		text-align: center;
+	}
 
-header img {width: 130px; display: block; margin: auto; margin-top: 15px;}
+	header img {width: 80%; display: block; margin: auto; padding:5%;}
 
 
-.button {
-	width: 80px;
-	height: 80px;
-	border-radius: 100%;
-	border: none;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	padding: 8%;
-}
+	.button {
+		width: 80px;
+		height: 80px;
+		border-radius: 100%;
+		border: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		padding: 8%;
+	}
 
-i {
-	font-size:55px;
-	text-align: center;
-	line-height: 50px;
-	color:white; #BDCF00
-}
+	i {
+		font-size:55px;
+		text-align: center;
+		line-height: 50px;
+		color:white; #BDCF00
+	}
 
-p {font-family:'Raleway', sans-serif; text-align: center; color: white; margin-top: 10px; font-size: 0.9em;}
+	p {font-family: 'Open Sans', sans-serif;text-align: center; color: white; margin-top: 10px; font-size: 0.9em;}
 
-.list a {color: #696d5e; font-size: 14px;}
+	.list a {color: #696d5e; font-size: 14px;}
 
-.item-divider {font-size: 14px;}
+	.item-divider {font-size: 14px;}
 
-.card i {color: #696d5e;}
+	.card i {color: #696d5e;}
+
+	.item p {text-align: left;}
+
+	.item {word-wrap: break-word;}
+
+	.title {text-align: center !important;}

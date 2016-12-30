@@ -1,18 +1,23 @@
 <ion-view view-title="Gesso Trevo">
-     <ion-content style="background-color: #6ba244;" scroll="false">
-      <header>
-        <img src="http://i.imgur.com/BFsT04q.jpg"/>
-        <!--<h2>GESSO TREVO</h2>-->
-      </header>
-      <div class="inicio">
-      <div class="row" style="margin-top:20px;">
+ <ion-content style="background-color: #a1bc31;" scroll="false" class="has-footer">
+  <header>
+    <img src="img/logo2.png"/>
+    <!--<h2>GESSO TREVO</h2>-->
+  </header>
+  <div class="inicio">
+    <div class="row" style="margin-top:20px;">
       <div class="col"><a ng-href="#/lista" class="button button-stable"><i class="ion-calculator"></i></a><p>CÁLCULO DE MATERIAIS</p></div>
-      <div class="col"><a ng-href="#/info" class="button button-stable"><i class="ion-folder"></i></a><p>INFORMAÇÕES TÉCNICAS</p></div>
+      <div class="col"><a ng-href="#/info" class="button button-stable"><i class="ion-folder"></i></a><p>BIBLIOTECA</p></div>
     </div>
-      <div class="row">
+    <div class="row">
       <div class="col"><a ng-href="#/rede" class="button button-stable"><i class="ion-map"></i></a><p>REDE AUTORIZADA</p></div>
       <div class="col"><a ng-href="#/contato" class="button button-stable"><i class="ion-ios-email"></i></a><p>CONTATO</p></div>
-      </div>
-      </div>
-  </ion-content>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer-bar align-title="center" class="bar-default" ng-controller="AbrirLink">
+  <p class="title" style="color:black; font-size:0.7em" ng-click="openInAppBrowser('http://www.polijuniorengenharia.com.br/')">Desenvolvido por Poli Júnior Engenharia</p>
+</ion-footer-bar>
+
 </ion-view> 

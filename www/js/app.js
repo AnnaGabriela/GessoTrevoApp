@@ -30,19 +30,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
-    .state('inicio', {
+  .state('inicio', {
     url: '/',
     templateUrl: 'templates/inicio.html'
   })
 
-    .state('lista', {
+  .state('lista', {
     url: '/lista',
     templateUrl: 'templates/lista.html'
   })
 
-   .state('parede', {
-    url: '/parede',
-    templateUrl: 'templates/calculoParede.html'
+  .state('blocos', {
+    url: '/blocos',
+    templateUrl: 'templates/blocos.html'
+  })
+
+  .state('placas', {
+    url: '/placas',
+    templateUrl: 'templates/placas.html'
+  })
+
+  .state('forros', {
+    url: '/forros',
+    templateUrl: 'templates/forros.html'
   })
 
   .state('info', {
@@ -55,11 +65,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/rede.html'
   })
 
-   .state('contato', {
+  .state('contato', {
     url: '/contato',
     templateUrl: 'templates/contato.html'
   })
-   ;
+  ;
 
 
   // if none of the above states are matched, use this as the fallback

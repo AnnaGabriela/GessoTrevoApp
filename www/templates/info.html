@@ -1,30 +1,51 @@
 <ion-pane>
-<ion-header-bar class="bar-light" style="background-color:#b21e2c;" ng-controller="MyCtrl">
-      <a ng-click="myGoBack()"><i class="ion-android-arrow-back" style="font-size:20px; line-height:35px; margin-left:5px;"></i></a>
-  <h1 class="title" style="color:white; font-size:15px;">INFORMAÇÕES TÉCNICAS</h1>
-</ion-header-bar>
-<ion-view>
-  <ion-content class="has-header">
-  
-  <div class="list">
+  <ion-header-bar class="bar-light" style="background-color:#a1bc31;" ng-controller="MyCtrl">
+    <a ng-click="myGoBack()"><i class="ion-android-arrow-back" style="font-size:20px; line-height:35px; margin-left:5px;"></i></a>
+    <h1 class="title" style="color:white; font-size:15px;">BIBLIOTECA</h1>
+  </ion-header-bar>
+  <ion-view>
+    <ion-content class="has-header" ng-controller="AbrirLink">
 
-  <div class="item item-divider">GUIA DE PRODUTOS</div>
-  <a class="item" href="">Catálogo de Produtos</a>
-  <div class="item item-divider">FICHAS DE PRODUTOS</div>
-  <a class="item" href="">Chapas</a>
-  <a class="item" href="">Massas e colas</a>
-  <a class="item" href="">Acessórios</a>
-  <a class="item" href="">Lã de Vidro</a>
-  <div class="item item-divider">CATÁLOGOS TÉCNICOS</div>
-  <a class="item" href="">Montagem de Sistemas</a>
-  <a class="item" href="">Qualigesso JET</a>
-  <div class="item item-divider">TABELAS DE DESEMPENHO</div>
-  <a class="item" href="">Paredes</a>
-  <a class="item" href="">Forros</a>
-  <a class="item" href="">Revestimentos</a>
+      <div class="list">
 
-  </div>
+        <div class="item item-divider">CATÁLOGOS</div>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/catalogos/folder-forros.pdf')">
+          Trevo Forros
+        </a>
+        <a class="item" ng-click="openInAppBrowser('https://drive.google.com/file/d/0BwER9ZdalSXgTTF3VGdvQnNUazQ/view?usp=sharing')">
+          Trevo Blocos
+        </a>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/catalogos/trevo-placas.pdf')">
+          Trevo Placas
+        </a>
+        <div class="item item-divider">PUBLICAÇÕES TÉCNICAS</div>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/Procedimento-para-execucao-de-alvenaria-em-blocos-de-gesso.pdf')">
+        Procedimento para execução de alvenaria<br>em blocos de gesso
+        </a>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/ESTOQUE-E-ARMAZENAMENTO-DE-BLOCOS.pdf')">
+          Estoque e armazenamento de blocos
+        </a>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/FICHA-TECNICA-TELA-DE-POLIESTER-2X2-002.pdf')">
+          Ficha técnica tela de poliester 2x2 002
+        </a>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/PROCEDIMENTO-DE-EXECUCAO-DE-FORRO-REMOVIVEL-VR-004.pdf')">
+          Procedimento de execução de forro<br>removível VR 004
+        </a>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/Informacoes-de-estoque-e-armazenamento-dos-Trevo-Blocos.pdf')">
+          Informações de estoque e armazenamento<br>dos Trevo Blocos
+        </a>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/DIRETRIZ-SINAT-08.pdf')">
+          Diretrizes para Avaliação Técnica de<br>Produtos- DIRETRIZ SINAT
+        </a>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/DIVISORIAS-INTERNAS-DE-EDIFICIOS-EM-ALVENARIA-DE-BLOCOS-DE-GESSO.pdf')">
+          Divisórias internas de edifícios em<br>alvenaria de bloco de gesso
+        </a>
+        <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/INFORMACOES-DE-SEGURANCA.pdf')">
+          Informações de Segurança</a>
+          <a class="item" ng-click="openInAppBrowser('http://www.trevogesso.com.br/biblioteca/publicacoes-tecnicas/PASTA-DE-GESSO-COMO-REVESTIMENTO-INTERNO-DE-PAREDES-E-TETOS.pdf')">
+            Pasta de Gesso como revestimento interno<br>de paredes e tetos
+          </a>
 
-  </ion-content>
-  </ion-pane>
-</ion-view>
+        </ion-content>
+      </ion-pane>
+    </ion-view>

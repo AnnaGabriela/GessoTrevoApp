@@ -1,24 +1,27 @@
 <ion-pane>
-<ion-header-bar class="bar-light" style="background-color:#b21e2c;" ng-controller="MyCtrl">
-      <a ng-click="myGoBack()"><i class="ion-android-arrow-back" style="font-size:20px; line-height:35px; margin-left:5px;"></i></a>
-  <h1 class="title" style="color:white; font-size:15px;">CALCULADORA DE MATERIAIS</h1>
-</ion-header-bar>
-<ion-view>
-  <ion-content class="has-header"><!--
-    <button style="margin-top: 100px;width:30%; padding:0px;" class="button button-full button-energized" onclick="window.open('http://www.trevogesso.com.br/', '_system');">
-      <a href="#" style="text-decoration:none; color: white;">SITE</a>
-    </button>
-      <a style="margin-top:40px; padding:7%;" class="button button-full button-energized" ng-href="tel:(87)3870-1244">TEL</a>
-      <a style="margin-top:40px; padding:7%;" class="button button-full button-energized" ng-href="mailto:sac@gessotrevo.com.br">EMAIL</a>-->
+  <ion-header-bar class="bar-light" style="background-color:#a1bc31;" ng-controller="MyCtrl">
+    <a ng-click="myGoBack()"><i class="ion-android-arrow-back" style="font-size:20px; line-height:35px; margin-left:5px;"></i></a>
+    <h1 class="title" style="color:white; font-size:15px;">CALCULADORA DE MATERIAIS</h1>
+  </ion-header-bar>
+  <ion-view>
+  <ion-content class="has-header">
+  <!--<ul class="list">
+        <a ng-href="#/alvenaria" class="item">Alvenaria em Blocos de Gesso</a>
+        <a ng-href="#/forro" class="item">Forro de Gesso</a>
+        <a ng-href="#/revestimento" class="item">Revestimento Manual em Gesso</a>
+      </ul>-->
 
-  <ul class="list">
-        <a ng-href="#/parede" class="item">CÁLCULO DE PAREDE</a>
-        <a ng-href="#/parede" class="item">CÁLCULO DE FORRO</a>
-        <a ng-href="#/parede" class="item">CÁLCULO DE REVESTIMENTO</a>
-        <a ng-href="#/parede" class="item">CÁLCULO DE FULANO</a>
-        <a ng-href="#/parede" class="item">CÁLCULO DE CICRANO</a>
-    </ul>
-  </ion-content>
+
+      <div class="row responsive-sm">
+        <div class="col"><a ng-href="#/forros"><img src="img/logoforro2.png"></a></div>
+        <div class="col"><a ng-href="#/blocos"><img src="img/logobloco2.png"></a></div>
+        <div class="col"><a ng-href="#/placas"><img src="img/logoplaca2.png"></a></div>
+      </div>
+
+    </ion-content>
   </ion-pane>
 </ion-view>
 
+<style type="text/css">
+  .col img {width:200px; display: block; margin: auto; padding: 5%; margin-top: 4%;}
+</style>

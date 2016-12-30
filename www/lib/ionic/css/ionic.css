@@ -23,6 +23,7 @@
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @font-face {
   font-family: "Ionicons";
   src: url("../fonts/ionicons.eot?v=2.0.1");
@@ -8651,14 +8652,14 @@ progress {
         color: #fff; }
   .button.button-stable {
     border-color: transparent;
-    background-color: #b21e2c;
+    background-color: #a61219;
     color: #444; }
     .button.button-stable:hover {
       color: #444;
       text-decoration: none; }
     .button.button-stable.active, .button.button-stable.activated {
       border-color: #a2a2a2;
-      background-color: #E25967; }
+      background-color: #950306; }
     .button.button-stable.button-clear {
       border-color: transparent;
       background: none;
