@@ -1,0 +1,27 @@
+{
+  "name": "GessoTrevo",
+  "private": true,
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.2"
+  },
+  "homepage": "www.gessotrevo.com.br",
+  "authors": [
+    "Anna Gabriela Carvalho"
+  ],
+  "description": "App da empresa Gesso Trevo",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pdfmake": "^0.1.20",
+    "angular-pdf": "^1.4.0",
+    "chance": "^1.0.4"
+  }
+}

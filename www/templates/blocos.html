@@ -1,0 +1,133 @@
+<style type="text/css">
+  button {width:100%; border-bottom: none;}
+</style>
+
+<ion-view>
+  <ion-header-bar class="bar-light" style="background-color:#a1bc31;" ng-controller="MyCtrl">
+    <a ng-click="myGoBack()"><i class="ion-android-arrow-back" style="font-size:20px; line-height:35px; margin-left:5px;"></i></a>
+    <h1 class="title" style="color:white; font-size:15px;">ALVENARIA DE BLOCOS DE GESSO</h1>
+  </ion-header-bar>
+  <body>
+   <ion-content class="has-header">
+    <div ng-controller = "CalculoCtrl" class="list"">
+      <label class="item item-input item-stacked-label"><br>
+        <span class="input-label">Altura</span>
+        <input type="number" placeholder="m" pattern="\d*" ng-model="altura" ng-pattern="/^[0-9]+(\.[0-9]{1,})?$/" step="0.01" required>
+      </label>
+      <label class="item item-input item-stacked-label"><br>
+        <span class="input-label">Largura</span>
+        <input type="number" placeholder="m" pattern="\d*" ng-model="largura" ng-pattern="/^[0-9]+(\.[0-9]{1,})?$/" step="0.01" required>
+      </label>
+      <label class="item item-input item-stacked-label"><br>
+        <span class="input-label">Área</span>
+        <p style="color:black; text-align:left;">{{ area() | number: 2}} m²</p>
+      </label>
+      
+      <!-- RESULTADOS CALCULOS -->
+      
+      <div class="card">
+        <button class="item item-divider" ng-click="toggle()">
+          <p style="text-transform: uppercase; text-align:center;">Alvenaria de Bloco de gesso Stand<br>com 70mm vazado</p>
+        </button>
+        <div ng-show="mostrar">
+          <div class="item item-text-wrap">
+            <p>Bloco vazado simples de 70mm vazado:   <b>{{ area() * 1.04 | number: 2 }} unid</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso Cola:  <b> {{ area() * 1.3 | number: 2 }} kg</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso para acabamento:   <b>{{ area() * 1.56 | number: 2 }} kg</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="item item-divider" ng-click="toggle2()">
+          <p style="text-transform: uppercase; text-align:center;">Alvenaria de Bloco de gesso Hidro<br>com 70mm vazado</p>
+        </button>
+        <div ng-show="mostrar2">
+          <div class="item item-text-wrap">
+            <p>Bloco vazado hidro de 70mm vazado:   <b>{{ area() * 1.04 | number: 2 }} unid</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso Cola Hidro:  <b> {{ area() * 1.3 | number: 2 }} kg</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso para acabamento:   <b>{{ area() * 1.56 | number: 2 }} kg</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="item item-divider" ng-click="toggle3()">
+          <p style="text-transform: uppercase; text-align:center;">Alvenaria de Bloco de gesso Stand<br>com 70mm maciço</p>
+        </button>
+        <div ng-show="mostrar3">
+          <div class="item item-text-wrap">
+            <p>Bloco vazado Simples de 70mm maciço:  <b> {{ area() * 1.04 | number: 2 }} unid</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso Cola:   <b>{{ area() * 1.3 | number: 2 }} kg</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso para acabamento:   <b>{{ area() * 1.56 | number: 2 }} kg</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="item item-divider" ng-click="toggle4()">
+          <p style="text-transform: uppercase; text-align:center;">Alvenaria de Bloco de gesso Hidro<br>com 70mm maciço</p>
+        </button>
+        <div ng-show="mostrar4">
+          <div class="item item-text-wrap">
+            <p>Bloco vazado Hidro de 70mm maciço:  <b> {{ area() * 1.04 | number: 2 }} unid</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso Cola Hidro:  <b> {{ area() * 1.3 | number: 2 }} kg</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso para acabamento: <b>  {{ area() * 1.56 | number: 2 }} kg</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="item item-divider" ng-click="toggle5()">
+          <p style="text-transform: uppercase; text-align:center;">Alvenaria de Bloco de gesso Stand<br>com 100mm maciço   </p>
+        </button>
+        <div ng-show="mostrar5">
+          <div class="item item-text-wrap">
+            <p>Bloco vazado Simples de 100mm maciço:<b>   {{ area() * 1.04 | number: 2 }} unid</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso Cola:   <b>{{ area() * 1.82 | number: 2 }} kg</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso para acabamento:  <b> {{ area() * 1.56 | number: 2 }} kg</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="item item-divider" ng-click="toggle6()">
+          <p style="text-transform: uppercase; text-align:center;">Alvenaria de Bloco de gesso Hidro<br>com 100mm maciço</p>
+        </button>
+        <div ng-show="mostrar6">
+          <div class="item item-text-wrap">
+            <p>Bloco vazado Hidro de 100mm maciço:  <b> {{ area() * 1.04 | number: 2 }} unid</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso Cola Hidro:<b>   {{ area() * 1.82 | number: 2 }} kg</b></p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>Gesso para acabamento:  <b> {{ area() * 1.56 | number: 2 }} kg</b></p>
+          </div>
+        </div>
+      </div>
+
+    </ion-content>
+  </ion-view>
+
+</body>

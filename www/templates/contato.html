@@ -1,0 +1,70 @@
+<ion-pane>
+  <ion-header-bar class="bar-light" style="background-color:#a1bc31;" ng-controller="MyCtrl">
+    <a ng-click="myGoBack()"><i class="ion-android-arrow-back" style="font-size:20px; line-height:35px; margin-left:5px;"></i></a>
+    <h1 class="title" style="color:white; font-size:15px;">CONTATO</h1>
+  </ion-header-bar>
+  <ion-view>
+    <ion-content class="has-header" ng-controller="AbrirLink">
+     <div class="list card">
+
+      <a class="item item-icon-left" target="_system" ng-click="openInAppBrowser('http://www.trevogesso.com.br')">
+      <i class="icon ion-ios-world-outline"></i>
+        <p style="text-align:left;"> Nosso Site</p>
+      </a>
+      <a class="item item-icon-left" ng-click="openInAppBrowser('https://www.facebook.com/trevogesso')">
+        <i class="icon ion-social-facebook"></i>
+        <p style="text-align:left;">  Gesso Trevo</p>
+      </a>
+
+      <a class="item item-icon-left">
+        <i class="icon ion-ios-location"></i>
+        <p style="text-align:left;">Rodovia PE-630, KM3<br>
+          Trindade - PE - 56250-000</p>
+        </a>
+
+        <a ng-href="tel:(87) 3870-1244" class="item item-icon-left">
+          <i class="icon ion-ios-telephone"></i>
+          <p style="text-align:left;">(87) 3870-1244</p>
+        </a>
+
+        <a ng-href="tel:(87) 3870-1604" class="item item-icon-left">
+          <i class="icon ion-ios-telephone"></i>
+          <p style="text-align:left;"> (87) 3870-1604</p>
+        </a>
+
+        <a ng-href="tel:(87)3870-1235" class="item item-icon-left">
+          <i class="icon ion-ios-telephone"></i>
+          <p style="text-align:left;">(87) 3870-1235</p>
+        </a>
+
+        <a ng-href="tel:(87) 3870-1324" class="item item-icon-left">
+          <i class="icon ion-ios-telephone"></i>
+          <p style="text-align:left;">(87) 3870-1324</p>
+        </a>
+
+        <a ng-href="mailto:sac@gessotrevo.com.br" class="item item-icon-left">
+          <i class="icon ion-email"></i>
+          <p style="text-align:left;">sac@gessotrevo.com.br</p>
+        </a>
+
+        <a ng-href="mailto:vendas@gessotrevo.com.br" class="item item-icon-left">
+          <i class="icon ion-email"></i>
+          <p style="text-align:left;">vendas@gessotrevo.com.br</p>
+        </a>
+
+        <a ng-href="mailto:financeiro@gessotrevo.com.br" class="item item-icon-left">
+          <i class="icon ion-email"></i>
+          <p style="text-align:left;"> financeiro@gessotrevo.com.br</p>
+        </a>
+
+        <a ng-href="mailto:setortecnico@gessotrevo.com.br" class="item item-icon-left">
+          <i class="icon ion-email"></i>
+          <p style="text-align:left;"> setortecnico@gessotrevo.com.br</p>
+        </a>
+
+
+      </div>
+
+    </ion-content>
+  </ion-pane>
+</ion-view>
