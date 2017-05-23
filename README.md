@@ -1,4 +1,4 @@
-> Certificar que SDK e componentes estão instalados corretamente e variáveis de ambiente configuradas
+> Certificar que SDK e componentes estão instalados corretamente e variáveis de ambiente configuradas<br><br>
   > Configurar variáveis de ambiente no mac:
   >	1. Reset Path `PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"`	
   >	2. Set Android Home `export ANDROID_HOME=/Applications/Android/Android-SDK`
